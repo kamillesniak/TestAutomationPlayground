@@ -118,3 +118,5 @@ C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAuto
 C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.csproj.CopyComplete
 C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.dll
 C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.pdb
+C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.Migrations.Clients.resources
+C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.csproj.GenerateResource.cache
