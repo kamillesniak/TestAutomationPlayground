@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  testautomationplayground:
+    image: ${DOCKER_REGISTRY}testautomationplayground
+    build:
+      context: .\TestAutomationPlayground
+      dockerfile: Dockerfile
