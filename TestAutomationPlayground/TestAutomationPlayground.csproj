@@ -206,6 +206,18 @@
     <Compile Include="Migrations\201812232348266_Clients.Designer.cs">
       <DependentUpon>201812232348266_Clients.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812241006106_SeedClientTypes.cs" />
+    <Compile Include="Migrations\201812241006106_SeedClientTypes.Designer.cs">
+      <DependentUpon>201812241006106_SeedClientTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812241340050_ChangesInClienType.cs" />
+    <Compile Include="Migrations\201812241340050_ChangesInClienType.Designer.cs">
+      <DependentUpon>201812241340050_ChangesInClienType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812241340467_FixedClientTypeSeed.cs" />
+    <Compile Include="Migrations\201812241340467_FixedClientTypeSeed.Designer.cs">
+      <DependentUpon>201812241340467_FixedClientTypeSeed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Clients\Client.cs" />
@@ -301,6 +313,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201812232348266_Clients.resx">
       <DependentUpon>201812232348266_Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812241006106_SeedClientTypes.resx">
+      <DependentUpon>201812241006106_SeedClientTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812241340050_ChangesInClienType.resx">
+      <DependentUpon>201812241340050_ChangesInClienType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812241340467_FixedClientTypeSeed.resx">
+      <DependentUpon>201812241340467_FixedClientTypeSeed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

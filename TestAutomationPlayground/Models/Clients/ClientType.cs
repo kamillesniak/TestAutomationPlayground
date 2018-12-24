@@ -8,6 +8,6 @@ namespace TestAutomationPlayground.Models.Clients
     public class ClientType
     {
         public int Id { get; set; }
-        public int Name { get; set; }
+        public string Name { get; set; }
     }
 }

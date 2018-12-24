@@ -1,7 +1,29 @@
-﻿
-@{
-    ViewBag.Title = "Index";
+﻿@model IEnumerable<TestAutomationPlayground.Models.Clients.Client>
+    ViewBag.Title = "Clients";
 }
 
 <h2>Index</h2>
+<table id="Clients">
+    <thead>
+        <tr>Id</tr>
+        <tr>FirstName</tr>
+        <tr>LastName</tr>
+        <tr>InsuranceNumber</tr>
+        <tr>ClientType</tr>
+    </thead>
+    <tbody>
+        @foreach (var client in Model)
+        {
+            <tr>@client.Id</tr>
+            <tr>@client.FirstName</tr>
+            <tr>@client.LastName</tr>
+            <tr>@client.InsuranceNumber</tr>
+            <tr>@client.ClientType</tr>
+        }
+
+
+
+    </tbody>
+
+</table>
 

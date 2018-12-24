@@ -120,3 +120,6 @@ C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAuto
 C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.pdb
 C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.Migrations.Clients.resources
 C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.csproj.GenerateResource.cache
+C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.Migrations.SeedClientTypes.resources
+C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.Migrations.ChangesInClienType.resources
+C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.Migrations.FixedClientTypeSeed.resources
