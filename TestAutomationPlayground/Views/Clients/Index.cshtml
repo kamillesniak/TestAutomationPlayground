@@ -2,28 +2,35 @@
     ViewBag.Title = "Clients";
 }
 
-<h2>Index</h2>
-<table id="Clients">
-    <thead>
-        <tr>Id</tr>
-        <tr>FirstName</tr>
-        <tr>LastName</tr>
-        <tr>InsuranceNumber</tr>
-        <tr>ClientType</tr>
-    </thead>
-    <tbody>
-        @foreach (var client in Model)
-        {
-            <tr>@client.Id</tr>
-            <tr>@client.FirstName</tr>
-            <tr>@client.LastName</tr>
-            <tr>@client.InsuranceNumber</tr>
-            <tr>@client.ClientType</tr>
-        }
+
+<div class="container">
+    <h2>Index</h2>
+    <table id="Clients" class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">FirstName</th>
+                <th scope="col">LastName</th>
+                <th scope="col">InsuranceNumber</th>
+                <th scope="col">ClientType</thscope="col">
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var client in Model)
+            {
+            <tr>
+                <th scope="row">@client.Id</th>
+                <td>@client.FirstName</td>
+                <td>@client.LastName</td>
+                <td>@client.InsuranceNumber</td>
+                <td>@client.ClientType.Name</td>
+            </tr>
+            }
 
 
 
-    </tbody>
+        </tbody>
 
-</table>
+    </table>
 
+</div>
