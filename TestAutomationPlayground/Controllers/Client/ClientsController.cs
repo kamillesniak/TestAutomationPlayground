@@ -22,5 +22,10 @@ namespace TestAutomationPlayground.Controllers.Clients
         {
             return View(clients);
         }
+
+        public ActionResult Save()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

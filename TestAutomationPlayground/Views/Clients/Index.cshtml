@@ -1,10 +1,11 @@
 ﻿@model IEnumerable<TestAutomationPlayground.Models.Clients.Client>
-    ViewBag.Title = "Clients";
-}
+
 
 
 <div class="container">
-    <h2>Index</h2>
+    <div class="page-header">
+    <h2>Clients</h2>
+    </div>
     <table id="Clients" class="table table-bordered table-hover">
         <thead>
             <tr>
@@ -12,7 +13,7 @@
                 <th scope="col">FirstName</th>
                 <th scope="col">LastName</th>
                 <th scope="col">InsuranceNumber</th>
-                <th scope="col">ClientType</thscope="col">
+                <th scope="col">ClientType</th>
             </tr>
         </thead>
         <tbody>
