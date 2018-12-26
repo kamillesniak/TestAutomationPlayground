@@ -3,13 +3,62 @@
 
 <div class="container">
     <h2>New Client</h2>
-    @using (Html.BeginForm("Save", "Customer"))
+    @using (Html.BeginForm("Save", "Clients"))
     {
-        <div class="form-group">
-            @Html.LabelFor(m => m.Client.FirstName)
-            @Html.TextBoxFor(m=> m.Client.FirstName, new { @class = "form-control" })
-            @Html.ValidationMessageFor(m=> m.Client.FirstName)
+        <div class="form-group row">
+            @Html.LabelFor(m => m.Client.FirstName, new { @class = "col-sm-2 col-form-label" })
+            @Html.TextBoxFor(m => m.Client.FirstName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Client.FirstName)
         </div>
+        <div class="form-group row">
+            @Html.LabelFor(m => m.Client.LastName, new { @class = "col-sm-2 col-form-label" })
+            @Html.TextBoxFor(m => m.Client.LastName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Client.LastName)
+        </div>
+        <div class="form-group row">
+            @Html.LabelFor(m => m.Client.Email, new { @class = "col-sm-2 col-form-label" })
+            @Html.TextBoxFor(m => m.Client.Email, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Client.Email)
+        </div>
+        <div class="form-group row">
+            @Html.LabelFor(m => m.Client.BirthDate, new { @class = "col-sm-2 col-form-label" })
+            @Html.TextBoxFor(m => m.Client.BirthDate, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Client.BirthDate)
+        </div>
+        <div class="form-group row">
+            @Html.LabelFor(m => m.Client.InsuranceNumber, new { @class = "col-sm-2 col-form-label" })
+            @Html.TextBoxFor(m => m.Client.InsuranceNumber, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Client.InsuranceNumber)
+            <small class="form-text text-muted">Provide valid insurance number like: AAA1234567</small>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(m => m.Client.ClientTypeId, new { @class = "col-sm-2 col-form-label" })
+            @Html.DropDownListFor(m => m.Client.ClientTypeId, new SelectList(Model.ClientType,"Id","Name"), new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Client.ClientTypeId)
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Client Status</label>
+            @foreach (var status in Model.ClientStatus)
+            {
+
+                @Html.RadioButtonFor(m => m.Client.ClientStatusId, status.Id)
+                @Html.Label(status.Name, new { @class = "col-sm-2 col-form-label" })
+
+            }
+            @Html.ValidationMessageFor(m => m.Client.ClientStatus)
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(m => m.Client.IsSubsribedToNewsLetter, new { @class = "col-sm-2 col-form-label" })
+            @Html.CheckBoxFor(m => m.Client.IsSubsribedToNewsLetter, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Client.IsSubsribedToNewsLetter)
+        </div>
+
+        @Html.HiddenFor(m => m.Client.Id)
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-primary">Save</button>
     }
 
 </div>

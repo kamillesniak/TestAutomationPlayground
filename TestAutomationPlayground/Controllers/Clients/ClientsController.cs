@@ -34,6 +34,27 @@ namespace TestAutomationPlayground.Controllers.Clients
             };
             return View("ClientForm", viewModel);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Save(Client client)
+        {
+            if(!ModelState.IsValid)
+            {
+                var viewModel = new ClientFormViewModel
+                {
+                    Client = new Client(),
+                    ClientStatus = dbContext.ClientStatuses.ToList(),
+                    ClientType = dbContext.ClientTypes.ToList()
+                };
+                return View("ClientForm", viewModel);
+            }
+            if(client.Id==0)
+            {
+                dbContext.Clients.Add(client);
+            }
+            dbContext.SaveChanges();
+            return RedirectToAction("Index");
+        }
 
     }
 }
