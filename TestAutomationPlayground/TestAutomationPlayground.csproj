@@ -196,9 +196,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\Client\ClientsController.cs" />
+    <Compile Include="Controllers\Clients\ClientsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Dto\ClientDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -218,9 +219,19 @@
     <Compile Include="Migrations\201812241340467_FixedClientTypeSeed.Designer.cs">
       <DependentUpon>201812241340467_FixedClientTypeSeed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812251257473_clientstatuses.cs" />
+    <Compile Include="Migrations\201812251257473_clientstatuses.Designer.cs">
+      <DependentUpon>201812251257473_clientstatuses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812261319015_ClientDataValidations.cs" />
+    <Compile Include="Migrations\201812261319015_ClientDataValidations.Designer.cs">
+      <DependentUpon>201812261319015_ClientDataValidations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Clients\Client.cs" />
+    <Compile Include="Models\Clients\ClientFormViewModel.cs" />
+    <Compile Include="Models\Clients\ClientStatus.cs" />
     <Compile Include="Models\Clients\ClientType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -293,9 +304,11 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Clients\Index.cshtml" />
+    <Content Include="Views\Clients\ClientForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Client\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -322,6 +335,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812241340467_FixedClientTypeSeed.resx">
       <DependentUpon>201812241340467_FixedClientTypeSeed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812251257473_clientstatuses.resx">
+      <DependentUpon>201812251257473_clientstatuses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812261319015_ClientDataValidations.resx">
+      <DependentUpon>201812261319015_ClientDataValidations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

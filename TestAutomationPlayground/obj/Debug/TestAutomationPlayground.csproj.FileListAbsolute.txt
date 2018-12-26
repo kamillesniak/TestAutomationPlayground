@@ -123,3 +123,5 @@ C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAuto
 C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.Migrations.SeedClientTypes.resources
 C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.Migrations.ChangesInClienType.resources
 C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.Migrations.FixedClientTypeSeed.resources
+C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.Migrations.clientstatuses.resources
+C:\Projects\TestAutomationPlayground\TestAutomationPlayground\obj\Debug\TestAutomationPlayground.Migrations.ClientDataValidations.resources

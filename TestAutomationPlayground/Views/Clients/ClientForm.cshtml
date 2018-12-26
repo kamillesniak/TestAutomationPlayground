@@ -1,0 +1,16 @@
+﻿@model TestAutomationPlayground.Models.Clients.ClientFormViewModel
+
+
+<div class="container">
+    <h2>New Client</h2>
+    @using (Html.BeginForm("Save", "Customer"))
+    {
+        <div class="form-group">
+            @Html.LabelFor(m => m.Client.FirstName)
+            @Html.TextBoxFor(m=> m.Client.FirstName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m=> m.Client.FirstName)
+        </div>
+    }
+
+</div>
+

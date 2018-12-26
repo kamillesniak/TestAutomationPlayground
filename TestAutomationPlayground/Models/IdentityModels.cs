@@ -23,6 +23,7 @@ namespace TestAutomationPlayground.Models
     {
         public DbSet<Client> Clients { get; set; }
         public DbSet<ClientType> ClientTypes { get; set; }
+        public DbSet<ClientStatus> ClientStatuses { get; set; }
 
 
         public ApplicationDbContext()
